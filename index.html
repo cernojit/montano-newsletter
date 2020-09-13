@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Školky Montano</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="charset" constent="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		html {
+			font-family: Oswald, Calibri, sans-serif;
+			color: #352618;
+			border: none;
+		}
+		h1 {
+			font-size: 20px;
+			font-weight: 600;
+			color: #FFFFFF;
+			padding: 0;
+			margin: 0
+		}
+
+		h2 {
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #795330;
+			padding: 0;
+			margin: 0
+		}
+
+		table {
+			border: 0;
+			border-spacing: 0;
+			border-collapse: collapse;			
+		}
+
+		.container {
+			width: 600px;
+			height: auto;
+	    	display: block;		
+			border-collapse: collapse;
+			border-spacing: 0;			
+			border: none;			
+		}
+
+		.title {
+			background-color: #719A33;
+			text-align: center;
+			height: 40px;
+			width: 100%;
+			border: none;
+			padding: 0;
+			margin: 0
+		} 
+
+		.spacing {
+			display: block;
+			width: 100%;
+			height: 20px;
+			background-color: #E5E5E5
+		}
+
+		.spacing-15 {
+			height: 15px;
+		}
+
+		.spacing-40 {
+			height: 40px
+		}
+
+		.card {
+			width: 600px;
+			height: auto;
+			background: white;
+			display: flex;
+			justify-content: flex-start;	
+			border-collapse: collapse;
+			border-spacing: 0
+	   }
+
+		.card td:first-child {
+			border-right: 1px solid #E5E5E5;
+			border-collapse: collapse;
+		}
+
+		.card-desc{
+			width: 300px;
+			height: 60px;	
+			position: relative;
+		}
+
+		.line-between {
+			display: block;
+			text-align: center;
+			width: 90%;
+			height: 1px;
+			margin-left: 5%;
+			z-index:5;
+			background: #EBEBEB;
+		}
+
+		.card-desc h2 {
+			padding-left: 15px 
+		}
+
+		.card-bottom {
+			width: 300px;
+			height: 60px;
+		}
+ 
+		.card-bottom td {
+			border-style: hidden;
+		}
+
+		.btn {
+			padding-right: 15px;
+		}
+
+		button {
+			font-family: Oswald;
+			font-size: 18px;
+			text-transform: uppercase;
+			width: 120px;
+			height: 40px;
+			background-color: #3F9A9D;
+			text-align: center;
+			float: right;
+			border-style: hidden;
+			border-radius: 2px;
+			margin: 0;
+		}
+
+		.button {
+			color: white;
+			text-decoration: none;
+		}
+
+		.price {
+			font-weight: 600;
+			font-size: 18px;
+			padding-left: 15px;
+		}
+
+		.half-card {
+			width: 600px;
+			height: 100%;
+			display: flex;
+			justify-content: flex-start;
+			/*background: white;*/
+			border-collapse: collapse;
+		}
+
+		.half-card td {
+			width: 300px;
+		}
+
+		.empty {
+			background: #E5E5E5;
+			border: 2px solid #E5E5E5;
+			display: relative
+		}
+
+		.bg-white {
+			background: white;
+			padding: 0;
+			margin: 0;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+
+		.article {
+			width: 600px ;
+			height: 423px;
+			border: 0px;
+		   padding:0; 
+	    	margin:0;
+	    	border-collapse: collapse;
+	    	display: block;
+		}
+
+		.article-text {
+			width: 100%;
+			height: 142px;
+			color: white;
+			background-color: #352618;
+			padding-left: 15px;
+		}
+
+		.article-text h1 {
+			padding: 0px 0 10px 0;
+		}
+
+		.article-text p {
+			padding: 0;
+			margin: 0
+		}
+
+		.article-description {
+			width: 100%;
+			height: 280px;
+			padding: 0;
+			background: white;
+			margin: 0;
+		}
+
+		.article-description div {
+			font-size: 18px;
+			font-weight: 400;
+		}
+
+		.textbox {
+			width: 600px;
+			text-align: left;
+			position: center
+		}
+
+		.background {
+			background: url('./img/background.png');
+			width: 800px;
+			height: 436px;
+		}
+
+		.video-text {
+			text-align: center;
+			width: 600px;
+			font-size: 20px;
+			font-weight: 500;
+			color: white;
+			padding: 15px 0 5px 0;
+			text-decoration: none
+		}
+
+		.video {
+			padding: 10px 0 30px 0;
+		}
+
+		.footer {
+			background-color: #191919;
+			width: 100%;
+			color: white;
+			padding: 0
+		}
+
+		.footer-table {
+			width: 600px;
+			height: 453px;
+			text-align: center;
+			border: 0px;
+		   padding:0; 
+	    	margin:0;
+	    	border-collapse: collapse;
+	    	display: block;
+		}
+
+		.icons {
+			width: 600px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.icons td {
+			padding: 35px 20px 35px 20px;
+		}
+
+		.link {
+			padding-bottom: 20px; 
+		}
+
+		.link a{
+			font-size: 20px; 
+			font-weight: lighter; 
+			text-decoration: none; 
+			color: #3F9A9D;
+		}
+
+		.link a:hover {
+			text-decoration: underline;
+		}
+
+		.footer-line-between {
+			height: 0.5px;
+			width: 100%;
+			margin-left: 0;
+			opacity: 50%;
+		}
+
+		.akce {
+			font-size: 16px;
+			font-weight: 300;
+			padding-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+<span style="display: none;">Odolné živé ploty z domácí produkce.</span>
+<table align="center" cellspacing="0" cellpadding="0" style="width: 800px; border: 0; border-spacing: 0;  padding: 0; background-color: #E5E5E5 ">
+	<tbody align="center" style="width: 100%; padding: 0">
+			<tr style="background-color: white; height: 90px; padding: 0 ">
+				<td align="center" style="width: 100%">
+					<a href="www.zahradnictvi-montano.cz" target="_blank">
+						<img src="./img/logo.png" width="231px" height="50px">
+					</a>
+				</td>
+			</tr>
+
+			<!-- Section title -->
+			<tr class="title">
+				<td>
+					<h1>Odolné živé ploty z domácí produkce</h1>
+				</td>
+			</tr>
+
+			<!-- product section -->
+			<tr class="container" >
+				<td align="center">
+					<span class="spacing"></span>
+
+					<!-- Line of two cards -->
+					<table class="card"  cellspacing="0" cellpadding="0" style="border-spacing: 0; padding: 0px; margin: 0">
+						<tr class="card-img">
+							<td >
+									<a href="https://www.zahradnictvi-montano.cz/ptaci-zob-ligustrum-ovalifolium-z000000000004622" target="_blank">
+									<img src="./img/ptacizob.png" width="300px">		
+								</a>		
+							</td>
+							<td>
+								<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=habr" target="_blank">
+									<img src="./img/habr.png"  width="100%">		
+								</a>		
+							</td>
+						</tr>
+						<tr >
+							<td  class="card-desc">
+								<h2>Ptačí zob vejčitolistý</h2>
+							</td>
+							<td class="card-desc">
+								<h2>Habr Obecný</h2>						
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="line-between"></span>
+							</td>
+							<td>
+								<span class="line-between"></span>
+							</td>
+						</tr>	
+						<tr>
+							<td >
+								<table class="card-bottom" cellspacing="0"  cellpadding="0"  style="border-spacing: 0;  padding: 0px; margin: 0">
+									<tr>
+										<td class="price">
+											<a>od 39,00 Kč</a>
+										</td>
+										<td class="btn">
+											<button><a class="button" href="https://www.zahradnictvi-montano.cz/ptaci-zob-ligustrum-ovalifolium-z000000000004622" target="_blank">Koupit</a></button>								
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table class="card-bottom">
+									<tr>
+										<td class="price ">
+											<a>od 32,90 Kč</a>
+										</td>
+										<td class="btn">
+											<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=habr" target="_blank">Koupit</a></button>								
+										</td>
+									</tr>
+								</table>
+							</td>							
+						</tr>
+					</table>
+
+					<!-- Half of the card -->
+					<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+						<tr class="card-img">
+							<td class="bg-white">
+								<a href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">
+									<img src="./img/zerav.png">	
+								</a>		
+							</td>
+							<td class="empty">
+							</td>
+						</tr>
+						<tr >
+							<td class="card-desc bg-white">
+								<h2>ZERAV ZÁPADNÍ 'SMARAGD'</h2>
+							</td>
+							<td class="empty" rowspan="3">
+							</td>
+						</tr>
+						<tr>
+							<td class="bg-white">
+								<span class="line-between"></span>
+							</td>
+						</tr>	
+						<tr>
+							<td>
+								<table class="card-bottom bg-white" cellspacing="0" cellpadding="0" style=" border-spacing: 0;   padding: 0px; margin: 0">
+									<tr>
+										<td class="price">
+											<a>od 69,00 Kč</a>
+										</td>
+										<td class="btn ">
+											<button><a class="button" href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">Koupit</a></button>								
+										</td>
+									</tr>
+								</table>
+							</td>						
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<!-- ARTICLE BROWN BOX and ONE ITEM with description box -->
+			<tr class="container">
+				<td align="center">
+					<span class="spacing spacing-15"></span>
+					<table class="article" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0; padding: 0; margin: 0">
+						<tr>		
+							<td class="article-text" colspan="2" >
+								<h1>Jak vysadit živý plot?</h1>
+								<p>
+									Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+								</p>
+							</td>	
+						</tr>
+						<tr>
+							<td class="card-img">
+								<a href="https://www.zahradnictvi-montano.cz/jilm-sibirsky-ulmus-pumila-z000010000005727" target="_blank">
+									<img src="./img/jilm.png">	
+								</a>			
+							</td>
+							<td class="article-description" >
+								<table cellspacing="0" cellpadding="0" style=" border: 0; border-spacing: 0; padding: 0; margin: 0">
+									<tr>	
+										<h2 style="padding: 15px 0 10px 15px;">Jilm sibiřský</h2>	
+										<div style="height: 35px; padding: 10px 0 5px 15px;">
+											<a>Rychle rostoucí, nenáročný živý plot.</a>	
+										</div>
+										<div style="height: 96px; padding: 5px 0 10px 15px;">
+											<a>Prodejní velikost<br>
+											80/100l<br>
+											Velikost hrnku<br>
+											3l</a>
+										</div>
+									</tr>
+									<span class="line-between" style="padding: 0"></span>
+									<tr>
+										<td>
+											<table class="card-bottom" cellspacing="0" cellpadding="0" style="border:none;border-spacing: 0;  padding: 0px; margin: 0;">
+												<tr >
+													<td class="price">
+														<a>od 105,00 Kč</a>
+													</td>
+													<td class="btn">
+														<button><a class="button" href="https://www.zahradnictvi-montano.cz/jilm-sibirsky-ulmus-pumila-z000010000005727" target="_blank">Koupit</a></button>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>	
+						</tr>
+					</table>
+					<span class="spacing"></span>
+				</td>
+			</tr>
+
+			<!-- Section title -->
+			<tr class="title">
+				<td align="center">
+					<h1>Medonosné dřeviny</h1>
+				</td>
+			</tr>
+
+			<!-- product section -->
+			<tr class="container">
+				<tr >
+					<td>
+						<p class="textbox">
+							Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<!-- Line of two cards -->
+						<table class="card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+							<tr class="card-img">
+								<td class="card-img">
+									<a href="https://www.zahradnictvi-montano.cz/levandule-aromatico-blue-lavandula-ang-aromatico-blue-z000010000005494" target="_blank">
+										<img src="./img/levandule.png">	
+									</a>			
+								</td>
+								<td>
+									<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=komule" target="_blank">
+										<img src="./img/komule.png">
+									</a>				
+								</td>
+							</tr>
+							<tr class="card-desc">
+								<td>
+									<h2>LEVANDULE 'AROMATICO BLUE'</h2>
+								</td>
+								<td>
+									<h2>KOMULE DAVIDOVA 'ROYAL RED'</h2>						
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="line-between"></span>
+								</td>
+								<td>
+									<span class="line-between"></span>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 35,00 Kč</a>
+											</td>
+											<td class="btn">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/levandule-aromatico-blue-lavandula-ang-aromatico-blue-z000010000005494">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table class="card-bottom">
+										<tr>
+											<td class="price ">
+												<a>od 75,00 Kč</a>
+											</td>
+											<td class="btn">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=komule" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>							
+							</tr>
+						</table>
+						<!-- Half of the card -->
+						<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+							<tr class="card-img">
+								<td class="bg-white">
+									<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=hydrangea" target="_blank">
+										<img src="./img/hortenzie.png">	
+									</a>		
+								</td>
+								<td class="empty" rowspan="3">
+								</td>
+							</tr>
+							<tr >
+								<td class="card-desc bg-white">
+									<h2 style="width: 275px; padding: 15px 0 15px 15px">HORTENZIE STROMEČKOVITÁ 'PINK ANNABELLE®'</h2>
+								</td>
+							</tr>
+							<tr>
+								<td class="bg-white">
+									<span class="line-between"></span>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<table class="card-bottom bg-white" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 279,00 Kč</a>
+											</td>
+											<td class="btn ">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=hydrangea" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>							
+							</tr>
+						</table>
+					<span class="spacing spacing-40"></span>
+					</td>
+				</tr>
+			</tr>
+
+			<!-- Section title -->
+			<tr class="title">
+				<td align="center">
+					<h1>Skalničky, netřesky, rozchodníky</h1>
+				</td>
+			</tr>
+
+			<!-- product section -->
+			<tr class="container">
+				<tr>
+					<td>
+						<p class="textbox">
+							Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<!-- Line of two cards -->
+						<table class="card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+							<tr class="card-img">
+								<td class="card-img">
+									<a href="https://www.zahradnictvi-montano.cz/rozchodnik-nadherny-sedum-spectabile-brillant-z000000000020739" target="_blank">
+										<img src="./img/universal.png">
+									</a>				
+								</td>
+								<td>
+									<a href="https://www.zahradnictvi-montano.cz/netresk-sempervivum-arach-silberkarneol-z000000000020915" target="_blank">
+										<img src="./img/netresk.png">				
+									</a>
+								</td>
+							</tr>
+							<tr class="card-desc">
+								<td>
+									<h2>ROZCHODNÍK NÁDHERNÝ</h2>
+								</td>
+								<td>
+									<h2>NETŘESK 'SILBERKARNEOL'</h2>						
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="line-between"></span>
+								</td>
+								<td>
+									<span class="line-between"></span>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 35,00 Kč</a>
+											</td>
+											<td class="btn">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/rozchodnik-nadherny-sedum-spectabile-brillant-z000000000020739" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table class="card-bottom">
+										<tr>
+											<td class="price ">
+												<a>od 35,00 Kč</a>
+											</td>
+											<td class="btn">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/netresk-sempervivum-arach-silberkarneol-z000000000020915" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>							
+							</tr>
+						</table>
+						<!-- Half of the card -->
+						<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+							<tr class="card-img">
+								<td class="bg-white">
+									<a href="https://www.zahradnictvi-montano.cz/plamenka-phlox-sub-emmerald-cushion-blue-z000010000000279" target="_blank">
+										<img src="./img/universal.png">			
+									</a>
+								</td>
+								<td class="empty" rowspan="3">
+								</td>
+							</tr>
+							<tr>
+								<td class="card-desc bg-white">
+									<h2>PLAMENKA</h2>
+								</td>
+							</tr>
+							<tr>
+								<td class="bg-white">
+									<span class="line-between"></span>
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<table class="card-bottom bg-white" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 35,00 Kč</a>
+											</td>
+											<td class="btn ">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/plamenka-phlox-sub-emmerald-cushion-blue-z000010000000279" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>					
+							</tr>
+						</table>
+						<span class="spacing spacing-40"></span>
+					</td>
+				</tr>
+			</tr>
+
+			<!-- video section -->
+			<tr class="container background">
+				<td>
+				<table class="video-table">
+					<tr >
+						<td class="video-text">
+							<p>
+								V krátkém videu si můžete prohlédnout pěstební plochy, kde se pěstují trvalky, okrasné keře, jehličnany, bylinky, ovocné keře i stromky, stromy pro les a krajinu a také alejové stromy.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="video">
+							<a href="https://www.youtube.com/watch?v=s0u7d_qm5wg" target="_blank">
+								<img src="./img/video.png">
+							</a>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+
+			<!-- footer -->
+			<tr class="container footer">
+				<td>
+				<table class="footer-table" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0;  padding: 0;">
+					<tr>
+						<td align="center" style="padding: 35px 0 20px 0">
+							<a href="" target="_blank" >
+								<img src="./img/logo.png" width="155px" height="34px" >
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 0; margin: 0">
+							<p style="font-size: 20px; font-weight: 400; padding: 0; margin: 0">
+								<a href="https://www.zahradnictvi-montano.cz/kontakt" target="_blank" style="font-size: 20px; font-weight: 400; padding: 0; margin: 0; color: white; text-decoration: none">
+								Firma Školky-Montano spol. s r.o. je firmou s rodinnou tradicí, která na trhu působí<br>již více jak 25 let. Nachází se nedaleko Prahy poblíž Hradecké dálnice, EXIT 18
+							</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table class="icons">
+								<tr>
+									<td>
+										<a href="https://www.facebook.com/SkolkyMontano" target="_blank">
+										<img src='./img/icon-fb.png' width="42px">
+										</a>
+									</td>
+									<td>
+										<a href="https://www.instagram.com/zahradnictviskolkymontano/" target="_blank">
+										<img src='./img/icon-insta.png' width="42px">
+										</a>
+									</td>
+									<td>
+										<a href="http://skolky-montano.cz/" target="_blank">
+										<img src='./img/icon-web.png' width="42px">
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="link" >
+							<a href="https://www.zahradnictvi-montano.cz/" target="_blank">www.zahradnictvi-montano.cz</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="line-between footer-line-between "></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="akce">
+							<p >
+								AKCE: Sleva 100,- Kč na první nákup u nás na e-shopu. Slevová akce platí do 16. 10. 2020 po zadání<br> slevového kódu ŠM100podzim v konečné fázi elektronické objednávky.
+							</p>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		
+		
+	</tbody>
+	
+
+</table>
+</body>
+</html>
