@@ -12,10 +12,12 @@
 			color: #352618;
 			border: none;
 		}
+
 		h1 {
-			font-size: 20px;
+			font-size: 34px;
 			font-weight: 600;
-			color: #FFFFFF;
+			text-transform: uppercase;
+			color: #795330;
 			padding: 0;
 			margin: 0
 		}
@@ -29,12 +31,28 @@
 			margin: 0
 		}
 
+		h3 {
+			font-size: 20px;
+			font-weight: 600;
+			color: white;
+			padding: 0;
+			margin: 0
+		}
+
 		table {
 			border: 0;
 			border-spacing: 0;
 			border-collapse: collapse;			
 		}
 
+		.background-top {
+			background-image: url('./img/background-top.png');
+			background-position: bottom;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100px
+
+		}
 		.container {
 			width: 600px;
 			height: auto;
@@ -45,20 +63,14 @@
 		}
 
 		.title {
-			background-color: #719A33;
-			text-align: center;
-			height: 40px;
-			width: 100%;
-			border: none;
-			padding: 0;
-			margin: 0
+			text-align: left;
 		} 
 
 		.spacing {
 			display: block;
 			width: 100%;
 			height: 20px;
-			background-color: #E5E5E5
+			background-color: #EDF3DF
 		}
 
 		.spacing-15 {
@@ -80,7 +92,7 @@
 	   }
 
 		.card td:first-child {
-			border-right: 1px solid #E5E5E5;
+			border-right: 1px solid #EDF3DF;
 			border-collapse: collapse;
 		}
 
@@ -156,8 +168,8 @@
 		}
 
 		.empty {
-			background: #E5E5E5;
-			border: 2px solid #E5E5E5;
+			background: #EDF3DF;
+			border: 2px solid #EDF3DF;
 			display: relative
 		}
 
@@ -187,7 +199,7 @@
 			padding-left: 15px;
 		}
 
-		.article-text h1 {
+		.article-text h3 {
 			padding: 0px 0 10px 0;
 		}
 
@@ -295,18 +307,23 @@
 </head>
 <body>
 <span style="display: none;">Odolné živé ploty z domácí produkce.</span>
-<table align="center" cellspacing="0" cellpadding="0" style="width: 800px; border: 0; border-spacing: 0;  padding: 0; background-color: #E5E5E5 ">
+<table align="center" cellspacing="0" cellpadding="0" style="width: 800px; border: 0; border-spacing: 0;  padding: 0; background-color: #EDF3DF ">
 	<tbody align="center" style="width: 100%; padding: 0">
 			<tr style="background-color: white; height: 90px; padding: 0 ">
-				<td align="center" style="width: 100%">
+				<td align="center" style="width: 100%" class="background-top">
 					<a href="www.zahradnictvi-montano.cz" target="_blank">
 						<img src="./img/logo.png" width="231px" height="50px">
 					</a>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<span class="spacing spacing-15"></span>
+				</td>
+			</tr>
 
 			<!-- Section title -->
-			<tr class="title">
+			<tr class="container title">
 				<td>
 					<h1>Odolné živé ploty z domácí produkce</h1>
 				</td>
@@ -319,6 +336,7 @@
 
 					<!-- Line of two cards -->
 					<table class="card"  cellspacing="0" cellpadding="0" style="border-spacing: 0; padding: 0px; margin: 0">
+
 						<tr class="card-img">
 							<td >
 									<a href="https://www.zahradnictvi-montano.cz/ptaci-zob-ligustrum-ovalifolium-z000000000004622" target="_blank">
@@ -423,9 +441,9 @@
 					<table class="article" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0; padding: 0; margin: 0">
 						<tr>		
 							<td class="article-text" colspan="2" >
-								<h1>Jak vysadit živý plot?</h1>
+								<h3>Jak vysadit živý plot?</h3>
 								<p>
-									Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+									Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="https://www.zahradnictvi-montano.cz/jak-spravne-vysadit-zivy-plot" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
 								</p>
 							</td>	
 						</tr>
@@ -473,9 +491,10 @@
 			</tr>
 
 			<!-- Section title -->
-			<tr class="title">
+			<tr class="container title">
 				<td align="center">
-					<h1>Medonosné dřeviny</h1>
+					<h1>Medonosné dřeviny  <img src="./img/vcela.png" width="57px" style="padding-left: 15px"></h1>
+
 				</td>
 			</tr>
 
@@ -484,7 +503,7 @@
 				<tr >
 					<td>
 						<p class="textbox">
-							Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+							Medonosné rostliny, ať už dřeviny nebo trvalky či ovocné stromky, hrají v přírodě velkou roli a stále častěji jsou cíleně vysazovány do okrasných zahrad. Lze bez nadsázky říci, že včelám, čmelákům a motýlům vděčíme za každé třetí sousto. <a class="link" href="https://www.zahradnictvi-montano.cz/medonosne-rostliny" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
 						</p>
 					</td>
 				</tr>
@@ -589,7 +608,7 @@
 			</tr>
 
 			<!-- Section title -->
-			<tr class="title">
+			<tr class="container title">
 				<td align="center">
 					<h1>Skalničky, netřesky, rozchodníky</h1>
 				</td>
@@ -600,7 +619,7 @@
 				<tr>
 					<td>
 						<p class="textbox">
-							Je známo, že zeleň působí na lidskou mysl velmi pozitivně. Není proto překvapující, že obliba zelených živých plotů je stále vyšší a vyšší. Jak ale správně takový plot založit? Jak daleko od sebe rostliny sázet, kdy a jak se o plot starat? <a href="" style="text-decoration: none; color: #3F9A9D">Celý článek</a>
+							Skalka je bezesporu hezký, ale technicky náročněji proveditelný prvek v zahradě. V první řadě je potřeba dobře plánovat a vědět, jaké podmínky nám staniviště dovoluje. Na základě toho volit správnou skladbu kamení i rostlin. <a class="link" href="https://www.zahradnictvi-montano.cz/skalnicky" style="text-decoration: none; color: #3F9A9D;">Celý článek</a>
 						</p>
 					</td>
 				</tr>
@@ -611,7 +630,7 @@
 							<tr class="card-img">
 								<td class="card-img">
 									<a href="https://www.zahradnictvi-montano.cz/rozchodnik-nadherny-sedum-spectabile-brillant-z000000000020739" target="_blank">
-										<img src="./img/universal.png">
+										<img src="./img/rozchodnik.png">
 									</a>				
 								</td>
 								<td>
@@ -668,7 +687,7 @@
 							<tr class="card-img">
 								<td class="bg-white">
 									<a href="https://www.zahradnictvi-montano.cz/plamenka-phlox-sub-emmerald-cushion-blue-z000010000000279" target="_blank">
-										<img src="./img/universal.png">			
+										<img src="./img/plamenka.png">			
 									</a>
 								</td>
 								<td class="empty" rowspan="3">
