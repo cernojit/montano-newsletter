@@ -53,6 +53,7 @@
 			height: 100px
 
 		}
+
 		.container {
 			width: 600px;
 			height: auto;
@@ -66,15 +67,40 @@
 			text-align: left;
 		} 
 
+		.akce {
+			background: url('./img/akce-bg.png');
+			background-color: white;
+			width: 600px;
+			height: 225px;
+			background-repeat: no-repeat;
+		}
+
+		.akce h1 {
+			font-size: 34px;
+			font-weight: 400;
+			color: #70A82E;
+		}
+
+		.akce-text {
+			font-size: 20px;
+			font-weight: 500;
+			padding: 25px 30px 0 35px;
+			color: #795330;
+		}
+
 		.spacing {
 			display: block;
 			width: 100%;
 			height: 20px;
-			background-color: #EDF3DF
+			background-color: #EAF4DE
 		}
 
 		.spacing-15 {
 			height: 15px;
+		}
+
+		.spacing-20 {
+			height: 20px
 		}
 
 		.spacing-40 {
@@ -92,7 +118,7 @@
 	   }
 
 		.card td:first-child {
-			border-right: 1px solid #EDF3DF;
+			border-right: 1px solid #EAF4DE;
 			border-collapse: collapse;
 		}
 
@@ -110,6 +136,16 @@
 			margin-left: 5%;
 			z-index:5;
 			background: #EBEBEB;
+		}
+
+		.line-between-section {
+			display: block;
+			text-align: center;
+			width: 600px;
+			height: 2px;
+			margin-left: 0;
+			z-index:5;
+			background: #D8E3BD;
 		}
 
 		.card-desc h2 {
@@ -152,33 +188,6 @@
 			font-weight: 600;
 			font-size: 18px;
 			padding-left: 15px;
-		}
-
-		.half-card {
-			width: 600px;
-			height: 100%;
-			display: flex;
-			justify-content: flex-start;
-			/*background: white;*/
-			border-collapse: collapse;
-		}
-
-		.half-card td {
-			width: 300px;
-		}
-
-		.empty {
-			background: #EDF3DF;
-			border: 2px solid #EDF3DF;
-			display: relative
-		}
-
-		.bg-white {
-			background: white;
-			padding: 0;
-			margin: 0;
-			border-spacing: 0;
-			border-collapse: collapse;
 		}
 
 		.article {
@@ -256,7 +265,7 @@
 
 		.footer-table {
 			width: 600px;
-			height: 453px;
+			height: 316px;
 			text-align: center;
 			border: 0px;
 		   padding:0; 
@@ -272,7 +281,7 @@
 		}
 
 		.icons td {
-			padding: 35px 20px 35px 20px;
+			padding: 35px 20px 30px 20px;
 		}
 
 		.link {
@@ -290,19 +299,6 @@
 			text-decoration: underline;
 		}
 
-		.footer-line-between {
-			height: 0.5px;
-			width: 100%;
-			margin-left: 0;
-			opacity: 50%;
-		}
-
-		.akce {
-			font-size: 16px;
-			font-weight: 300;
-			padding-top: 10px;
-		}
-
 	</style>
 </head>
 <body>
@@ -318,7 +314,29 @@
 			</tr>
 			<tr>
 				<td>
-					<span class="spacing spacing-15"></span>
+					<span class="spacing spacing-20"></span>
+				</td>
+			</tr>
+
+			<!-- akce  -->
+			<tr class="container">
+				<td>
+					<table class="akce" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0; padding: 0; margin: 0">
+						<tr>		
+							<td class="akce-text" colspan="2" >
+								<h1>AKCE</h1>
+								<p>
+									Sleva 100,- Kč na první nákup u nás na e-shopu. Slevová akce platí do 16. 10. 2020 po zadání slevového kódu <a style="font-size: 22px; font-weight: 700; color: #70A82E">ŠM100podzim</a> v konečné fázi elektronické objednávky.
+								</p>
+							</td>	
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<span class="spacing spacing-40"></span>
 				</td>
 			</tr>
 
@@ -394,34 +412,53 @@
 					</table>
 
 					<!-- Half of the card -->
-					<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+					<table class="card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
 						<tr class="card-img">
 							<td class="bg-white">
 								<a href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">
 									<img src="./img/zerav.png">	
 								</a>		
 							</td>
-							<td class="empty">
+							<td>
+								<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=habr" target="_blank">
+									<img src="./img/hlohyne.png"  width="100%">		
+								</a>		
 							</td>
 						</tr>
 						<tr >
-							<td class="card-desc bg-white">
+							<td class="card-desc">
 								<h2>ZERAV ZÁPADNÍ 'SMARAGD'</h2>
 							</td>
-							<td class="empty" rowspan="3">
+							<td class="card-desc">
+								<h2>Hlohyně ´Red Column´</h2>
 							</td>
 						</tr>
 						<tr>
-							<td class="bg-white">
+							<td>
+								<span class="line-between"></span>
+							</td>
+							<td>
 								<span class="line-between"></span>
 							</td>
 						</tr>	
 						<tr>
 							<td>
-								<table class="card-bottom bg-white" cellspacing="0" cellpadding="0" style=" border-spacing: 0;   padding: 0px; margin: 0">
+								<table class="card-bottom" cellspacing="0" cellpadding="0" style=" border-spacing: 0;   padding: 0px; margin: 0">
 									<tr>
 										<td class="price">
 											<a>od 69,00 Kč</a>
+										</td>
+										<td class="btn ">
+											<button><a class="button" href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">Koupit</a></button>								
+										</td>
+									</tr>
+								</table>
+							</td>	
+							<td>
+								<table class="card-bottom" cellspacing="0" cellpadding="0" style=" border-spacing: 0;   padding: 0px; margin: 0">
+									<tr>
+										<td class="price">
+											<a>od 35,00 Kč</a>
 										</td>
 										<td class="btn ">
 											<button><a class="button" href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">Koupit</a></button>								
@@ -486,14 +523,27 @@
 							</td>	
 						</tr>
 					</table>
-					<span class="spacing"></span>
+					<span class="spacing spacing-40"></span>
 				</td>
 			</tr>
+
+			<tr>
+				<td>
+					<span class="line-between-section"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<span class="spacing spacing-20"></span>
+				</td>
+			</tr>
+
 
 			<!-- Section title -->
 			<tr class="container title">
 				<td align="center">
-					<h1>Medonosné dřeviny  <img src="./img/vcela.png" width="57px" style="padding-left: 15px"></h1>
+					<h1>Medonosné dřeviny  <img src="./img/vcela.png" width="57px" style="padding-left: 15px"> a trávy</h1>
 
 				</td>
 			</tr>
@@ -567,35 +617,56 @@
 							</tr>
 						</table>
 						<!-- Half of the card -->
-						<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+						<table class="card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
 							<tr class="card-img">
-								<td class="bg-white">
+								<td>
 									<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=hydrangea" target="_blank">
 										<img src="./img/hortenzie.png">	
 									</a>		
 								</td>
-								<td class="empty" rowspan="3">
+								<td>
+									<a href="https://www.zahradnictvi-montano.cz/travy" target="_blank">
+										<img src="./img/travy.png">	
+									</a>		
 								</td>
 							</tr>
 							<tr >
-								<td class="card-desc bg-white">
-									<h2 style="width: 275px; padding: 15px 0 15px 15px">HORTENZIE STROMEČKOVITÁ 'PINK ANNABELLE®'</h2>
+								<td class="card-desc">
+									<h2 style="width: 275px; padding: 10px 0 10px 15px">HORTENZIE STROMEČKOVITÁ 'PINK ANNABELLE®'</h2>
+								</td>
+								<td class="card-desc">
+									<h2 style="width: 275px; padding: 15px 0 15px 15px">Trávy</h2>
 								</td>
 							</tr>
 							<tr>
-								<td class="bg-white">
+								<td>
+									<span class="line-between"></span>
+								</td>
+								<td>
 									<span class="line-between"></span>
 								</td>
 							</tr>	
 							<tr>
 								<td>
-									<table class="card-bottom bg-white" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
 										<tr>
 											<td class="price">
 												<a>od 279,00 Kč</a>
 											</td>
 											<td class="btn ">
 												<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=hydrangea" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 75,00 Kč</a>
+											</td>
+											<td class="btn ">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/travy" target="_blank">Koupit</a></button>								
 											</td>
 										</tr>
 									</table>
@@ -607,10 +678,22 @@
 				</tr>
 			</tr>
 
+			<tr>
+				<td>
+					<span class="line-between-section"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<span class="spacing spacing-20"></span>
+				</td>
+			</tr>
+
 			<!-- Section title -->
 			<tr class="container title">
-				<td align="center">
-					<h1>Skalničky, netřesky, rozchodníky</h1>
+				<td >
+					<h1>Skalničky, netřesky, rozchodníky, dlužichy</h1>
 				</td>
 			</tr>
 
@@ -683,29 +766,39 @@
 							</tr>
 						</table>
 						<!-- Half of the card -->
-						<table class="half-card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
+						<table class="card"  cellspacing="0" cellpadding="0" style=" border-spacing: 0; padding: 0px; margin: 0">
 							<tr class="card-img">
-								<td class="bg-white">
+								<td>
 									<a href="https://www.zahradnictvi-montano.cz/plamenka-phlox-sub-emmerald-cushion-blue-z000010000000279" target="_blank">
 										<img src="./img/plamenka.png">			
 									</a>
 								</td>
-								<td class="empty" rowspan="3">
+								<td>
+									<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=dlu%C5%BEicha" target="_blank">
+										<img src="./img/dluzicha.png">			
+									</a>
 								</td>
 							</tr>
 							<tr>
-								<td class="card-desc bg-white">
+								<td class="card-desc">
 									<h2>PLAMENKA</h2>
 								</td>
+								<td class="card-desc" >
+									<h2 style="width: 275px; padding: 10px 0 10px 15px">DLUŽICHA 'MARVELOUS MARBLE
+										SILVER' </h2>
+								</td>
 							</tr>
 							<tr>
-								<td class="bg-white">
+								<td >
+									<span class="line-between"></span>
+								</td>
+								<td >
 									<span class="line-between"></span>
 								</td>
 							</tr>	
 							<tr>
 								<td>
-									<table class="card-bottom bg-white" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
 										<tr>
 											<td class="price">
 												<a>od 35,00 Kč</a>
@@ -716,6 +809,18 @@
 										</tr>
 									</table>
 								</td>					
+								<td>
+									<table class="card-bottom" style="cellspacing: 0; border-spacing: 0; cellpadding: 0;  padding: 0px; margin: 0">
+										<tr>
+											<td class="price">
+												<a>od 38,00 Kč</a>
+											</td>
+											<td class="btn">
+												<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=dlu%C5%BEicha" target="_blank">Koupit</a></button>								
+											</td>
+										</tr>
+									</table>
+								</td>	
 							</tr>
 						</table>
 						<span class="spacing spacing-40"></span>
@@ -748,9 +853,9 @@
 				<td>
 				<table class="footer-table" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0;  padding: 0;">
 					<tr>
-						<td align="center" style="padding: 35px 0 20px 0">
+						<td align="center" style="padding: 35px 0 20px 0; background: transparent;">
 							<a href="" target="_blank" >
-								<img src="./img/logo.png" width="155px" height="34px" >
+								<img src="./img/logo.svg" width="155px" height="34px" >
 							</a>
 						</td>
 					</tr>
@@ -789,18 +894,6 @@
 					<tr>
 						<td class="link" >
 							<a href="https://www.zahradnictvi-montano.cz/" target="_blank">www.zahradnictvi-montano.cz</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="line-between footer-line-between "></span>
-						</td>
-					</tr>
-					<tr>
-						<td class="akce">
-							<p >
-								AKCE: Sleva 100,- Kč na první nákup u nás na e-shopu. Slevová akce platí do 16. 10. 2020 po zadání<br> slevového kódu ŠM100podzim v konečné fázi elektronické objednávky.
-							</p>
 						</td>
 					</tr>
 				</table>
