@@ -50,8 +50,12 @@
 			background-position: bottom;
 			background-repeat: no-repeat;
 			width: 100%;
-			height: 100px
+			height: 100px;
+			vertical-align: bottom;
+		}
 
+		.background-top img {
+			padding-bottom: 0;
 		}
 
 		.container {
@@ -68,25 +72,40 @@
 		} 
 
 		.akce {
-			background: url('./img/akce-bg.png');
+			background: url('./img/seed.png');
+			background-position: 45% 60%;
 			background-color: white;
 			width: 600px;
 			height: 225px;
 			background-repeat: no-repeat;
-		}
-
-		.akce h1 {
-			font-size: 34px;
-			font-weight: 400;
-			color: #70A82E;
+			display: block
 		}
 
 		.akce-text {
-			font-size: 20px;
+			font-size: 28px;
 			font-weight: 500;
-			padding: 25px 30px 0 35px;
+			text-transform: uppercase;
 			color: #795330;
+			padding-left: 35px;
+			width: 375px;
+			height: 225px;
 		}
+
+		.akce-text p {
+			padding: 0;
+			margin: 0px 0 20px 0;
+		}
+
+		.akce-button {
+			width: 151px;
+			height: 40px;
+			float: left;
+		}
+
+		.akce-button:hover {
+			cursor: pointer
+		}
+
 
 		.spacing {
 			display: block;
@@ -305,16 +324,16 @@
 <span style="display: none;">Odolné živé ploty z domácí produkce.</span>
 <table align="center" cellspacing="0" cellpadding="0" style="width: 800px; border: 0; border-spacing: 0;  padding: 0; background-color: #EDF3DF ">
 	<tbody align="center" style="width: 100%; padding: 0">
-			<tr style="background-color: white; height: 90px; padding: 0 ">
-				<td align="center" style="width: 100%" class="background-top">
+			<tr style="background-color: white; height: 95px; padding: 0 ">
+				<td align="center" class="background-top">
 					<a href="www.zahradnictvi-montano.cz" target="_blank">
-						<img src="./img/logo.png" width="231px" height="50px">
+						<img src="./img/logo.svg" width="291px" height="63px" >
 					</a>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<span class="spacing spacing-20"></span>
+					<span class="spacing spacing-40"></span>
 				</td>
 			</tr>
 
@@ -323,11 +342,19 @@
 				<td>
 					<table class="akce" cellspacing="0" cellpadding="0" style="border: 0; border-spacing: 0; padding: 0; margin: 0">
 						<tr>		
-							<td class="akce-text" colspan="2" >
-								<h1>AKCE</h1>
+							<td class="akce-text" >
 								<p>
-									Sleva 100,- Kč na první nákup u nás na e-shopu. Slevová akce platí do 16. 10. 2020 po zadání slevového kódu <a style="font-size: 22px; font-weight: 700; color: #70A82E">ŠM100podzim</a> v konečné fázi elektronické objednávky.
+									<a style="font-size: 34px; font-weight: 600; color: #70A82E">Sleva 100 Kč</a> 
+									 na první nákup u nás na e-shopu
 								</p>
+								<p>
+									<button class="button akce-button" ><a class="button" href="https://www.zahradnictvi-montano.cz/sleva-na-prvni-nakup-u-nas-podzim" target="_blank">chci slevu</a></button>
+								</p>
+							</td>	
+							<td class="akce-img" >
+								<a href="https://www.zahradnictvi-montano.cz/sleva-na-prvni-nakup-u-nas-podzim" target="_blank">
+									<img src="./img/akce-img.png" width="225px">
+								</a>
 							</td>	
 						</tr>
 					</table>
@@ -400,7 +427,7 @@
 								<table class="card-bottom">
 									<tr>
 										<td class="price ">
-											<a>od 32,90 Kč</a>
+											<a>od 32,00 Kč</a>
 										</td>
 										<td class="btn">
 											<button><a class="button" href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=habr" target="_blank">Koupit</a></button>								
@@ -420,7 +447,7 @@
 								</a>		
 							</td>
 							<td>
-								<a href="https://www.zahradnictvi-montano.cz/vyhledavani/?search=habr" target="_blank">
+								<a href="https://www.zahradnictvi-montano.cz/stalezelene" target="_blank">
 									<img src="./img/hlohyne.png"  width="100%">		
 								</a>		
 							</td>
@@ -461,7 +488,7 @@
 											<a>od 35,00 Kč</a>
 										</td>
 										<td class="btn ">
-											<button><a class="button" href="https://www.zahradnictvi-montano.cz/zerav-zapadni-thuja-occ-smaragd-z000000000010309" target="_blank">Koupit</a></button>								
+											<button><a class="button" href="https://www.zahradnictvi-montano.cz/stalezelene" target="_blank">Koupit</a></button>								
 										</td>
 									</tr>
 								</table>
@@ -855,7 +882,7 @@
 					<tr>
 						<td align="center" style="padding: 35px 0 20px 0; background: transparent;">
 							<a href="" target="_blank" >
-								<img src="./img/logo.svg" width="155px" height="34px" >
+								<img src="./img/logo.png" width="155px" height="34px" >
 							</a>
 						</td>
 					</tr>
